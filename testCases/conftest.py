@@ -31,6 +31,8 @@ If u want to run test in parallel mode
 pytest testCases\Login_TestCase.py -s -v --browser chrome -n 2 
 n means of no of workers 
 
+For Grouping  : to run grouping test
+
 """
 
 

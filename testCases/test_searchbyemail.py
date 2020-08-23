@@ -21,16 +21,17 @@ class Test_SearchCustByEmail:
     password = ReadConfig.getPassword()
     logger = LogGen.loggen()
 
+
     def test_searchcustomerbyEmail(self,setup):
         self.logger.info("************TC 004 Search Customer************")
         self.driver = setup
         self.driver.get(self.baseUrl)
         self.driver.maximize_window()
         self.driver.implicitly_wait(2)
-        lp = LoginPage(self.driver)
-        lp.setUserName(self.username)
-        lp.setPassword(self.password)
-        lp.clickLogin()
+        self.lp = LoginPage(self.driver)
+        self.lp.setUserName(self.username)
+        self.lp.setPassword(self.password)
+        self.lp.clickLogin()
         self.logger.info("************Login Successful************")
         self.logger.info("************Searching Customer************")
         addcustomer = AddCustomer(self)
@@ -38,10 +39,10 @@ class Test_SearchCustByEmail:
         addcustomer.click_customer_menu()
         addcustomer.click_customer_sub_menu()
         self.logger.info("************Searching Customer By Email************")
-        searchcust = SearchCustomer(self)
-        searchcust.setEmail("admin@yourStore.com")
-        searchcust.clickSearch()
+        self.searchcust = SearchCustomer(self.driver)
+        self.searchcust.setEmail("admin@yourStore.com")
+        self.searchcust.clickSearch()
         time.sleep(5)
-        status = searchcust.searchCustomerEmail("admin@yourStore.com")
+        status = self.searchcust.searchCustomerEmail("admin@yourStore.com")
         assert True == status
         self.logger.info("************TC Search By Email Finished************")

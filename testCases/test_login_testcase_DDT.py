@@ -19,6 +19,7 @@ class Test_001_Login():
     logger = LogGen.loggen()
     path = "D:\\NopCommerceApp\\TestData\\LoginTest.xlsx"
 
+    @pytest.mark.regression
     def test_Login(self, setup):
         self.logger.info("===========Test_001_Login===========")
         self.logger.info("===========Verifying Login DDT Test===========")

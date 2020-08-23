@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from Utilities.wrapper import wrapper
 import time
+from selenium import webdriver
 
 
 class AddCustomer:
@@ -28,17 +29,16 @@ class AddCustomer:
     list_guest_xpath = "//li[contains(text(),'Guests')]"
     list_vendor_xpath = "//li[contains(text(),'Vendors')]"
 
-    # //div[@class='label-wrapper']/label[text()='Customer roles']/../..//following-sibling::div[@class='col-md-9']//following-sibling::div[@class='k-widget k-multiselect k-multiselect-clearable']
-    # //div[@class='label-wrapper']/label[text()='Newsletter']/../..//following-sibling::div[@class='col-md-9']//following-sibling::div[@class='k-widget k-multiselect k-multiselect-clearable']
-
     def __init__(self, driver):
         self.driver = driver
 
     def click_customer_menu(self):
-        wrapper.click_link_btn_byXpath(self.driver, self.customer_menu_xpath)
+        self.driver.find_element_by_xpath(self.customer_menu_xpath).click()
+        #wrapper.click_link_btn_byXpath(self.driver, self.customer_menu_xpath)
 
     def click_customer_sub_menu(self):
-        wrapper.click_link_btn_byXpath(self.driver, self.customer_menuitem_xpath)
+        self.driver.find_element_by_xpath(self.customer_menuitem_xpath).click()
+        #wrapper.click_link_btn_byXpath(self.driver, self.customer_menuitem_xpath)
 
     def add_new_customer(self):
         wrapper.click_link_btn_byXpath(self.driver, self.btn_addcustomer)

@@ -20,6 +20,7 @@ class Test_003_AddCustomer:
     logger = LogGen.loggen()
 
     #
+    @pytest.mark.regression
     def test_AddCust(self, setup):
         self.logger.info("************TC 003 Add Customer************")
         self.driver = setup

@@ -1,6 +1,7 @@
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
+from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
@@ -14,13 +15,12 @@ class wrapper:
         self.driver.find_element(By.XPATH, web_element).click()
 
     def enter_text_byXpath(self, web_element, value):
-
         try:
             ele = self.driver.find_element(By.XPATH, web_element)
             ele.clear()
             ele.send_keys(value)
         except NoSuchElementException:
-            pass
+            print(NoSuchElementException)
 
     def javaScriptExecutor(self, web_element):
         self.driver.execute_script("arguments[0].click();", web_element)
