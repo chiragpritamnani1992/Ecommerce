@@ -1,0 +1,8 @@
+Selenium grid is the concept which will allow you to run your test on multiple browser and machines
+Selenium grid will allow us to run the test on multiple nodes which will reduce the total execution
+time which is the main adv of test automation
+
+To understand Selenium Grid there are 2 new concepts
+
+1) Hub : Hub is the central machine which will redirect the commands to the respective node based on parameters
+2) Node : Node is an actual machine where the test will be executed 
