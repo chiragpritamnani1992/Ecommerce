@@ -6,22 +6,26 @@ from webdriver_manager.firefox import GeckoDriverManager
 
 from pageObjects.LoginPage import LoginPage
 import selenium.webdriver.chrome
+from Configurations import configuration as cf
 
 driver = None
 @pytest.yield_fixture()
 def setup(browser):
-    if browser == "chrome":
+    if browser == "chrome" and cf.Grid_Browser=="Jenkins":
         driver = webdriver.Remote(desired_capabilities=webdriver.DesiredCapabilities.CHROME.copy(),
                                   command_executor='http://localhost:4444/wd/hub')
         print("Launching Chrome Browser........")
-    elif browser == "ff":
+    elif browser == "ff" and cf.Grid_Browser=="Jenkins":
         driver = webdriver.Remote(desired_capabilities=webdriver.DesiredCapabilities.FIREFOX.copy(),
                                   command_executor='http://localhost:4444/wd/hub')
         print("Launching FF  Browser........")
-    elif browser == "IE":
+    elif browser == "IE" and cf.Grid_Browser=="Jenkins":
         driver = webdriver.Remote(desired_capabilities=webdriver.DesiredCapabilities.INTERNETEXPLORER.copy(),
                                   command_executor='http://localhost:4444/wd/hub')
         print("Launching IE  Browser........")
+    elif browser == "FF":
+        driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+        print("Launching FF  Browser........")
     else:
         driver = webdriver.Chrome(ChromeDriverManager().install())
         print("Launching Chrome Browser........")

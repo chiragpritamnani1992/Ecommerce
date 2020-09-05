@@ -1,2 +1,3 @@
-class config():
-    Browser = "Jenkins"
+
+Grid_Browser = "Jenkins"
+Local_Browser = "Chrome"
