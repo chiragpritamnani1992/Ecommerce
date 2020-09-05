@@ -33,7 +33,7 @@ class Test_003_AddCustomer:
         self.lp.clickLogin()
         self.logger.info("************Login Successful************")
         self.logger.info("************Adding Customer************")
-        addcustomer = AddCustomer(self)
+        addcustomer = AddCustomer(self.driver)
         self.driver.implicitly_wait(2)
         addcustomer.click_customer_menu()
         addcustomer.click_customer_sub_menu()

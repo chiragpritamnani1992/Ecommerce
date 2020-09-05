@@ -4,7 +4,7 @@ from Utilities.wrapper import wrapper
 import time
 
 
-class SearchCustomer():
+class SearchCustomer(wrapper):
     txt_search_email = "//input[@name='SearchEmail']"
     txt_search_fname = "//input[@name='SearchFirstName']"
     txt_search_lname = "//input[@name='SearchLastName']"
@@ -17,23 +17,19 @@ class SearchCustomer():
     driver = None
 
     def __init__(self, driver):
-        self.driver = driver
+        super().__init__(driver)
 
     def setEmail(self, email):
-        self.driver.find_element_by_xpath(self.txt_search_email).send_keys(email)
-        #wrapper.enter_text_byXpath(self.driver, self.txt_search_email, email)
+        wrapper.enter_text_byXpath(self, self.txt_search_email, email)
 
     def setFName(self, lname):
-        self.driver.find_element_by_xpath(self.txt_search_fname).send_keys(lname)
-        #wrapper.enter_text_byXpath(self.driver, self.txt_search_fname, password)
+        wrapper.enter_text_byXpath(self, self.txt_search_fname, lname)
 
     def setLName(self, fname):
-        self.driver.find_element_by_xpath(self.txt_search_lname).send_keys(fname)
-        #wrapper.enter_text_byXpath(self.driver, self.txt_search_lname, password)
+        wrapper.enter_text_byXpath(self, self.txt_search_lname, fname)
 
     def clickSearch(self):
-        self.driver.find_element_by_xpath(self.search_btn).click()
-        #wrapper.click_link_btn_byXpath(self.driver, self.search_btn)
+        wrapper.click_link_btn_byXpath(self, self.search_btn)
 
     def getNoOfRows(self):
         return len(self.driver.find_elements_by_xpath("//table[@id='customers-grid']//tbody/tr"))

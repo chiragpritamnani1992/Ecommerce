@@ -1,5 +1,8 @@
-08/23/2020 01:33:23 PM: INFO: Current google-chrome version is 84.0.4147
-08/23/2020 01:33:23 PM: INFO: Get LATEST driver version for 84.0.4147
-08/23/2020 01:33:23 PM: INFO: Driver [C:\Users\chira\.wdm\drivers\chromedriver\win32\84.0.4147.30\chromedriver.exe] found in cache
-08/23/2020 01:33:27 PM: INFO: ===========Verifying Login Test===========
-08/23/2020 01:33:41 PM: INFO: ===========Login Test is Passed===========
+09/05/2020 12:35:28 PM: INFO: Current google-chrome version is 85.0.4183
+09/05/2020 12:35:28 PM: INFO: Get LATEST driver version for 85.0.4183
+09/05/2020 12:35:29 PM: INFO: Driver [C:\Users\chira\.wdm\drivers\chromedriver\win32\85.0.4183.87\chromedriver.exe] found in cache
+09/05/2020 12:35:32 PM: INFO: ************TC 004 Search Customer************
+09/05/2020 12:35:44 PM: INFO: ************Login Successful************
+09/05/2020 12:35:44 PM: INFO: ************Searching Customer************
+09/05/2020 12:35:46 PM: INFO: ************Searching Customer By Email************
+09/05/2020 12:35:51 PM: INFO: ************TC Search By Email Finished************

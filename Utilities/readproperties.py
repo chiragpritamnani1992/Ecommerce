@@ -2,15 +2,16 @@
 
 import configparser
 
-
+configFilePath = r'D:\NopCommerceApp\Configurations\config.ini'
 config = configparser.RawConfigParser()
-config.read(".\\Configurations\\config.ini")
+config.read(configFilePath)
+
 
 class ReadConfig():
 
     @staticmethod
     def getApplicationURL():
-        url=config.get("common info","baseUrl")
+        url = config.get("common info", "baseUrl")
         return url
 
     @staticmethod

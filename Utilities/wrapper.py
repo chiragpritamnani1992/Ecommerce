@@ -4,7 +4,7 @@ from selenium.webdriver.support.select import Select
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
-
+from pageObjects import AddCustomer
 
 class wrapper:
 
