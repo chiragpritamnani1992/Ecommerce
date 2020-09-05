@@ -4,12 +4,16 @@ from selenium.webdriver.support.select import Select
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
+
+from Utilities.customLogger import LogGen
+
 from pageObjects import AddCustomer
 
 class wrapper:
 
     def __init__(self, driver):
         self.driver = driver
+        self.logger = LogGen.loggen()
 
     def click_link_btn_byXpath(self, web_element):
         self.driver.find_element(By.XPATH, web_element).click()

@@ -7,5 +7,5 @@ pushd %projectLocation%
 
 
 Echo Setting ChromeDriver path and Creating Node on port 4545
-java -Dwebdriver.chrome.driver=D:\Drivers\chromedriver.exe -jar "D:\Selenium Grid\selenium-server-standalone-3.141.59.jar" -role node -hub http://localhost:4444/wd/hub -port 4545
+java -Dwebdriver.chrome.driver=D:\Drivers\chromedriver.exe  -Dwebdriver.gecko.driver=D:\Drivers\geckodriver.exe -Dwebdriver.ie.driver=D:\Drivers\IEDriverServer.exe -jar "D:\Selenium Grid\selenium-server-standalone-3.141.59.jar" -role node -hub http://localhost:4444/wd/hub -port 4545
 pause
