@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8a6326e-58f4-431f-af5e-7e3803e15a23" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Screenshots/Test_login-2020-09-06_17-37-04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screenshots/screenshot-2020-09-06_17-36-07.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshottest/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshottest/test_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/automation.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utilities/wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/wrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCases/Reports/assets/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCases/Reports/searchbyemail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCases/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testCases/test_searchbyemail_Ch.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/test_searchbyemail_Ch.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
