@@ -9,17 +9,20 @@ import selenium.webdriver.chrome
 from Configurations import configuration as cf
 
 driver = None
-@pytest.yield_fixture()
+
+
+@pytest.fixture()
 def setup(browser):
-    if browser == "chrome" and cf.Grid_Browser=="Jenkins":
+    if browser == "chrome" and cf.Grid_Browser == "Jenkins":
         driver = webdriver.Remote(desired_capabilities=webdriver.DesiredCapabilities.CHROME.copy(),
                                   command_executor='http://localhost:4444/wd/hub')
         print("Launching Chrome Browser........")
-    elif browser == "ff" and cf.Grid_Browser=="Jenkins":
+
+    elif browser == "ff" and cf.Grid_Browser == "Jenkins":
         driver = webdriver.Remote(desired_capabilities=webdriver.DesiredCapabilities.FIREFOX.copy(),
                                   command_executor='http://localhost:4444/wd/hub')
         print("Launching FF  Browser........")
-    elif browser == "IE" and cf.Grid_Browser=="Jenkins":
+    elif browser == "IE" and cf.Grid_Browser == "Jenkins":
         driver = webdriver.Remote(desired_capabilities=webdriver.DesiredCapabilities.INTERNETEXPLORER.copy(),
                                   command_executor='http://localhost:4444/wd/hub')
         print("Launching IE  Browser........")
@@ -30,7 +33,6 @@ def setup(browser):
         driver = webdriver.Chrome(ChromeDriverManager().install())
         print("Launching Chrome Browser........")
     return driver
-
 
 
 """

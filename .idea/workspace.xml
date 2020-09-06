@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8a6326e-58f4-431f-af5e-7e3803e15a23" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Screenshots/Test_login-2020-09-06_17-37-04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshots/screenshot-2020-09-06_17-36-07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshottest/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshottest/test_login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Configurations/configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/Configurations/configuration.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/automation.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCases/Reports/assets/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCases/Reports/searchbyemail.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/testCases/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCases/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCases/test_searchbyemail_Ch.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/test_searchbyemail_Ch.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,17 +49,17 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\NopCommerceApp\testCases" />
-      <recent name="D:\NopCommerceApp\TestData" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\NopCommerceApp\Drivers" />
       <recent name="D:\NopCommerceApp\SeleniumGrid" />
       <recent name="D:\NopCommerceApp\Reports" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\NopCommerceApp\testCases" />
+      <recent name="D:\NopCommerceApp\TestData" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.setup_teardown">
+  <component name="RunManager" selected="Python.test_login">
     <configuration name="setup_teardown" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NopCommerceApp" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -96,6 +102,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_login" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NopCommerceApp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/screenshottest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/screenshottest/test_login.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test_login_chrome" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NopCommerceApp" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,27 +136,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SeleniumGrid/test_login_chrome.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_login_testcase" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="NopCommerceApp" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testCases" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\NopCommerceApp\testCases\test_login_testcase.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -161,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_login" />
         <item itemvalue="Python.setup_teardown" />
         <item itemvalue="Python.setup_teardown" />
         <item itemvalue="Python.test_login_chrome" />
         <item itemvalue="Python.test_addcustomer" />
-        <item itemvalue="Python.test_login_testcase_DDT" />
       </list>
     </recent_temporary>
   </component>
@@ -214,22 +220,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="155" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597481171860" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1598796773706">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1599373667387">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598796773706" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1598796773706">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599373667387" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1599373667387">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598796773706" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1598796773705">
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599373667387" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1599373667386">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598796773705" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1598796773706">
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599373667386" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1599373667387">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598796773706" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599373667387" />
     <state width="757" height="261" key="GridCell.Tab.1.bottom" timestamp="1597566268046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -250,10 +256,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1598169784862" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1599287049338">
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1599367778428">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1599287049338" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1599367778428" />
+    <state x="407" y="28" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599373832775">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="407" y="28" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1599373832775" />
     <state x="491" y="325" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1598796415099">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

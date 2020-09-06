@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
@@ -9,7 +11,9 @@ from Utilities.customLogger import LogGen
 
 from pageObjects import AddCustomer
 
+
 class wrapper:
+    sc_filepath = "D:\\NopCommerceApp\\Screenshots"
 
     def __init__(self, driver):
         self.driver = driver
@@ -38,3 +42,11 @@ class wrapper:
 
     def selectRadioButton(self, web_element, value):
         self.driver.find_element(By.XPATH, web_element).click()
+
+    # def screenshot(self):
+    #     now = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+    #     self.driver.get_screenshot_as_file('Screenshots\\screenshot-%s.png' % now)
+
+    def screenshot(self):
+        now = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+        self.driver.get_screenshot_as_file('Screenshots\\screenshot-%s.png' % now)
